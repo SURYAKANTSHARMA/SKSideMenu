@@ -18,20 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TId-cv-3hY">
-                                <rect key="frame" x="16" y="39" width="30" height="60"/>
+                                <rect key="frame" x="16" y="39" width="41" height="60"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7d-kX-gUE">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homePressed:" destination="2qC-dX-kFO" eventType="touchUpInside" id="bHV-1v-RmI"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n86-fF-x6A">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="41" height="30"/>
                                         <state key="normal" title="VC1"/>
                                         <connections>
                                             <action selector="vc1Pressed:" destination="2qC-dX-kFO" eventType="touchUpInside" id="IfM-8M-Zp8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7d-kX-gUE">
-                                        <rect key="frame" x="0.0" y="30" width="30" height="30"/>
-                                        <state key="normal" title="VC2"/>
-                                        <connections>
-                                            <action selector="vc2Pressed:" destination="2qC-dX-kFO" eventType="touchUpInside" id="rnt-9p-z1m"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -47,12 +47,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMD-90-Lae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="84"/>
+            <point key="canvasLocation" x="25" y="107"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller1-->
         <scene sceneID="iAA-wZ-R95">
             <objects>
-                <viewController storyboardIdentifier="VC1" id="cKX-jy-bEL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="cKX-jy-bEL" customClass="ViewController1" customModule="SKSideMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uCr-Se-hO1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,44 +71,62 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ibn-fA-GEt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VKr-VJ-oTx">
+                        <barButtonItem key="leftBarButtonItem" title="Left Menu" id="YlB-cL-BL4">
+                            <connections>
+                                <action selector="leftMenuPressed:" destination="cKX-jy-bEL" id="tB8-G7-1nn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right Menu" id="3zx-s7-cRy">
+                            <connections>
+                                <action selector="rightMenuPressed:" destination="cKX-jy-bEL" id="Pcx-bM-XDI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR5-7Y-hMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="824"/>
+            <point key="canvasLocation" x="1399" y="832"/>
         </scene>
-        <!--View Controller-->
+        <!--Right Side Menu View Controller-->
         <scene sceneID="2sB-tf-Mw1">
             <objects>
-                <viewController storyboardIdentifier="rightVC" id="I8w-hM-TC9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rightVC" id="I8w-hM-TC9" customClass="RightSideMenuViewController" customModule="SKSideMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4qx-9U-y5o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e77-Ut-7P1">
-                                <rect key="frame" x="3" y="4" width="30" height="60"/>
+                                <rect key="frame" x="326" y="39" width="41" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbc-Fo-5hC">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="VC3"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osv-o0-mKL">
-                                        <rect key="frame" x="0.0" y="30" width="30" height="30"/>
-                                        <state key="normal" title="VC4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homePressed:" destination="I8w-hM-TC9" eventType="touchUpInside" id="jhe-Lm-R65"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbc-Fo-5hC">
+                                        <rect key="frame" x="0.0" y="30" width="41" height="30"/>
+                                        <state key="normal" title="VC1"/>
+                                        <connections>
+                                            <action selector="vc1Pressed:" destination="I8w-hM-TC9" eventType="touchUpInside" id="XZS-j4-kb8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.65571531667987082" green="0.27637859450141178" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98096571078065198" green="1" blue="0.63170126160805995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e77-Ut-7P1" firstAttribute="leading" secondItem="qfL-Q3-flX" secondAttribute="leading" constant="3" id="dPq-uO-8EZ"/>
-                            <constraint firstItem="e77-Ut-7P1" firstAttribute="top" secondItem="4qx-9U-y5o" secondAttribute="top" constant="4" id="wyo-mH-PUQ"/>
+                            <constraint firstItem="qfL-Q3-flX" firstAttribute="trailing" secondItem="e77-Ut-7P1" secondAttribute="trailing" constant="8" id="UCp-vh-S5L"/>
+                            <constraint firstItem="e77-Ut-7P1" firstAttribute="top" secondItem="qfL-Q3-flX" secondAttribute="top" constant="19" id="wyo-mH-PUQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qfL-Q3-flX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHR-nT-DFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="94"/>
+            <point key="canvasLocation" x="2065" y="100"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="7fN-N7-746">
@@ -149,88 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVu-wy-1W6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="816"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bFV-va-wpW">
-            <objects>
-                <viewController storyboardIdentifier="VC2" id="TcS-94-Zgq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="URv-KK-yy1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-l5-wuj">
-                                <rect key="frame" x="171" y="323" width="32.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96366570382295791" green="0.52014191899579254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="xjS-l5-wuj" firstAttribute="centerX" secondItem="URv-KK-yy1" secondAttribute="centerX" id="S4B-jF-Oep"/>
-                            <constraint firstItem="xjS-l5-wuj" firstAttribute="centerY" secondItem="URv-KK-yy1" secondAttribute="centerY" id="l7j-iw-7aU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="2gD-se-zsc"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zm3-4c-9JG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="36" y="1526"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Q7h-hf-nUQ">
-            <objects>
-                <viewController storyboardIdentifier="VC3" id="b6n-Ho-rls" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ymb-Df-aRw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-hO-qb5">
-                                <rect key="frame" x="170.5" y="323" width="33" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94125394454491451" green="1" blue="0.32479387352737221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="QGo-hO-qb5" firstAttribute="centerY" secondItem="Ymb-Df-aRw" secondAttribute="centerY" id="M4s-k6-DWI"/>
-                            <constraint firstItem="QGo-hO-qb5" firstAttribute="centerX" secondItem="Ymb-Df-aRw" secondAttribute="centerX" id="R75-TR-yXY"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aWV-mC-T4H"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3DE-6X-jz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="824"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4AR-Xh-txy">
-            <objects>
-                <viewController storyboardIdentifier="VC4" id="jhH-a0-ZY8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5mx-c8-1wu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t9-Ua-o7Z">
-                                <rect key="frame" x="170.5" y="323" width="33" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.71733159190226214" blue="0.30338308507055778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7t9-Ua-o7Z" firstAttribute="centerY" secondItem="5mx-c8-1wu" secondAttribute="centerY" id="8g5-4K-Bdi"/>
-                            <constraint firstItem="7t9-Ua-o7Z" firstAttribute="centerX" secondItem="5mx-c8-1wu" secondAttribute="centerX" id="CmX-Jr-k6G"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="c9v-Ff-ecY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LYm-xa-V7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1662" y="1504"/>
+            <point key="canvasLocation" x="1378" y="107"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mwP-0x-2AR">
@@ -248,7 +185,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9l-xw-3Wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="824"/>
+            <point key="canvasLocation" x="703" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MT2-q5-LRH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G4B-0k-3lh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eiU-ou-akL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cKX-jy-bEL" kind="relationship" relationship="rootViewController" id="qkS-Jy-Jrq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mi7-NS-r72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="832"/>
         </scene>
     </scenes>
 </document>

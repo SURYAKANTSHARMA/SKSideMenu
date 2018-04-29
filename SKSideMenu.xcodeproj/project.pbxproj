@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E036F2A8209597EA00813A0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036F2A7209597EA00813A0F /* HomeViewController.swift */; };
 		E036F2AA2095A39000813A0F /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036F2A92095A39000813A0F /* LeftSideMenuViewController.swift */; };
+		E036F2AC2095DB6A00813A0F /* RightSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036F2AB2095DB6A00813A0F /* RightSideMenuViewController.swift */; };
 		E0FC67D9209449080075F765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC67D8209449080075F765 /* AppDelegate.swift */; };
 		E0FC67DB209449080075F765 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC67DA209449080075F765 /* ContainerViewController.swift */; };
 		E0FC67DE209449080075F765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FC67DC209449080075F765 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		E036F2A7209597EA00813A0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E036F2A92095A39000813A0F /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		E036F2AB2095DB6A00813A0F /* RightSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuViewController.swift; sourceTree = "<group>"; };
 		E0FC67D5209449080075F765 /* SKSideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FC67D8209449080075F765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0FC67DA209449080075F765 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				E0FC67DA209449080075F765 /* ContainerViewController.swift */,
 				E0FC67EA209454FD0075F765 /* ViewController1.swift */,
 				E036F2A92095A39000813A0F /* LeftSideMenuViewController.swift */,
+				E036F2AB2095DB6A00813A0F /* RightSideMenuViewController.swift */,
 				E0FC67DC209449080075F765 /* Main.storyboard */,
 				E0FC67DF209449080075F765 /* Assets.xcassets */,
 				E0FC67E1209449080075F765 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E036F2AA2095A39000813A0F /* LeftSideMenuViewController.swift in Sources */,
+				E036F2AC2095DB6A00813A0F /* RightSideMenuViewController.swift in Sources */,
 				E0FC67EB209454FD0075F765 /* ViewController1.swift in Sources */,
 				E0FC67DB209449080075F765 /* ContainerViewController.swift in Sources */,
 				E0FC67D9209449080075F765 /* AppDelegate.swift in Sources */,

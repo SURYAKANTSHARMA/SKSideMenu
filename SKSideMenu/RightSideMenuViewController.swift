@@ -1,5 +1,5 @@
 //
-//  LeftSideMenuViewController.swift
+//  RightSideMenuViewController.swift
 //  SKSideMenu
 //
 //  Created by SuryaKant Sharma on 29/04/18.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class LeftSideMenuViewController: UIViewController {
+class RightSideMenuViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-     
     @IBAction func vc1Pressed(_ sender: UIButton) {
         if let containerViewController = self.parent as? ContainerViewController {
             containerViewController.showVC1()
@@ -25,4 +21,5 @@ class LeftSideMenuViewController: UIViewController {
             containerViewController.addHomeAsChildVC()
         }
     }
+
 }
