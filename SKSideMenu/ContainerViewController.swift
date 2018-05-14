@@ -189,8 +189,8 @@ extension ContainerViewController: ContainerControllerDelegate {
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { finished in
                 self.currentState = .bothCollapsed
-                self.leftViewController?.view.removeFromSuperview()
-                self.leftViewController = nil
+//                 self.leftViewController?.view.removeFromSuperview()
+//                 self.leftViewController = nil
             }
         }
     }
@@ -205,8 +205,8 @@ extension ContainerViewController: ContainerControllerDelegate {
             animateCenterPanelXPosition(targetPosition: 0) { _ in
                 self.currentState = .bothCollapsed
                 
-                self.rightViewController?.view.removeFromSuperview()
-                self.rightViewController = nil
+//                 self.rightViewController?.view.removeFromSuperview()
+//                 self.rightViewController = nil
             }
         }
     }
