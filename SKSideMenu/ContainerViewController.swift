@@ -189,8 +189,6 @@ extension ContainerViewController: ContainerControllerDelegate {
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { finished in
                 self.currentState = .bothCollapsed
-//                 self.leftViewController?.view.removeFromSuperview()
-//                 self.leftViewController = nil
             }
         }
     }
@@ -204,9 +202,6 @@ extension ContainerViewController: ContainerControllerDelegate {
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { _ in
                 self.currentState = .bothCollapsed
-                
-//                 self.rightViewController?.view.removeFromSuperview()
-//                 self.rightViewController = nil
             }
         }
     }
@@ -233,17 +228,19 @@ extension ContainerViewController: ContainerControllerDelegate {
 }
 
 extension UIStoryboard {
-    static func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
+    static func mainStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
     
     static func leftViewController() -> UIViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "leftVC") as? UIViewController
+        return mainStoryboard().instantiateViewController(withIdentifier: "leftVC")
     }
     static func VC1() -> UIViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "VC1") as? UIViewController
+        return mainStoryboard().instantiateViewController(withIdentifier: "VC1")
     }
     
     static func rightViewController() -> UIViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "rightVC") as? UIViewController
+        return mainStoryboard().instantiateViewController(withIdentifier: "rightVC")
     }
     
     static func homeViewController() -> HomeViewController? {
